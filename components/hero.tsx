@@ -9,7 +9,12 @@ export default function Hero() {
           Quantum Safe Meshes <br /> with Kymesh
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Quantum Proof, Peer to Peer Edge Communication
+          Quantum Proof, Peer to Peer Edge Communication{" "}
+          <img
+            src="/computer.png"
+            alt="Computer"
+            className="inline h-[1em] w-auto align-baseline"
+          />
         </p>
       </div>
       <div className="flex gap-4">

@@ -10,8 +10,6 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/web' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/web' : '',
 }
 
 export default nextConfig

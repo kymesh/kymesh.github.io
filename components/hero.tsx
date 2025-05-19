@@ -1,37 +1,41 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 pt-12 pb-24 text-center md:pt-16 md:pb-32">
-      <div className="space-y-4">
+      <div className="space-y-6">
         <h1 className="bg-gradient-to-br from-foreground from-30% via-foreground/90 to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
-          Quantum Safe Meshes <br /> with KyMesh
+          Quantum Safe Meshes <br className="mb-2" /> with <span className="inline-block py-1">KyMesh</span>
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Quantum Proof, Peer to Peer Edge Communication
+          Quantum Proof, Peer to Peer Edge Communication for Secure Networks
         </p>
       </div>
 
       <div className="relative w-full max-w-md mx-auto mt-8">
-        <img
-          src="/computer.png"
-          alt="Computer"
-          className="w-full h-auto object-cover rounded-lg shadow-xl"
-        />
-        {/* <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-30 rounded-lg"></div> */}
+        <div className="aspect-w-16 aspect-h-9 relative overflow-hidden">
+          <Image
+            src="/computer.png"
+            alt="KyMesh quantum-resistant secure communication device"
+            width={800}
+            height={600}
+            priority
+            className="object-contain"
+          />
+        </div>
       </div>
-      {/* Buttons commented out
-      <div className="flex gap-4">
-        <Button size="lg" disabled>
-          Comming Soon...
-          <ArrowRight className="ml-2 h-4 w-4" />
+      
+      <div className="flex flex-col sm:flex-row gap-4 mt-6">
+        <Button size="lg" asChild>
+          <Link href="#features">Learn More</Link>
         </Button>
-        <Button variant="outline" size="lg">
-          Schedule a Demo
+        <Button variant="outline" size="lg" asChild>
+          <Link href="#contact">Get a Demo</Link>
         </Button>
       </div>
-      */}
     </section>
   );
 }

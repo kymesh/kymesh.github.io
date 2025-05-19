@@ -10,9 +10,6 @@ export default function Hero() {
         <h1 className="bg-gradient-to-br from-foreground from-30% via-foreground/90 to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
           Quantum Safe Meshes <br className="mb-2" /> with <span className="inline-block py-1">KyMesh</span>
         </h1>
-        <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Quantum Proof, Peer to Peer Edge Communication for Secure Networks
-        </p>
       </div>
 
       <div className="relative w-full max-w-md mx-auto mt-8">

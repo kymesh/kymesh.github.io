@@ -7,7 +7,7 @@ import MouseMoveEffect from "@/components/mouse-move-effect";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kymesh",
+  title: "KyMesh",
   description:
     "A novel approach by allowing quantum resistant communication on low power, long range transceiver devices.",
   generator: "v0.dev",

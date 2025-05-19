@@ -3,20 +3,25 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 py-24 text-center md:py-32">
+    <section className="container flex min-h-[calc(100vh-3.5rem)] max-w-screen-2xl flex-col items-center justify-center space-y-8 pt-12 pb-24 text-center md:pt-16 md:pb-32">
       <div className="space-y-4">
         <h1 className="bg-gradient-to-br from-foreground from-30% via-foreground/90 to-foreground/70 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
-          Quantum Safe Meshes <br /> with Kymesh
+          Quantum Safe Meshes <br /> with KyMesh
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          Quantum Proof, Peer to Peer Edge Communication{" "}
-          <img
-            src="/computer.png"
-            alt="Computer"
-            className="inline h-[1em] w-auto align-baseline"
-          />
+          Quantum Proof, Peer to Peer Edge Communication
         </p>
       </div>
+
+      <div className="relative w-full max-w-md mx-auto mt-8">
+        <img
+          src="/computer.png"
+          alt="Computer"
+          className="w-full h-auto object-cover rounded-lg shadow-xl"
+        />
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-30 rounded-lg"></div> */}
+      </div>
+      {/* Buttons commented out
       <div className="flex gap-4">
         <Button size="lg" disabled>
           Comming Soon...
@@ -26,6 +31,7 @@ export default function Hero() {
           Schedule a Demo
         </Button>
       </div>
+      */}
     </section>
   );
 }

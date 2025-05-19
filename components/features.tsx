@@ -1,24 +1,24 @@
-import { Brain, Cloud, Shield, Zap } from "lucide-react"
+import { Shield, Radio, Cpu, Zap } from "lucide-react"
 
 const features = [
   {
-    name: "AI-Powered Analytics",
-    description: "Harness the power of machine learning to derive actionable insights from your data.",
-    icon: Brain,
-  },
-  {
-    name: "Cloud-Native Architecture",
-    description: "Scalable, resilient, and efficient solutions built for the modern cloud ecosystem.",
-    icon: Cloud,
-  },
-  {
-    name: "Enterprise-Grade Security",
-    description: "State-of-the-art security measures to protect your most valuable assets.",
+    name: "Quantum-Secure Encryption",
+    description: "Built with Kyber ML-KEM FIPS 203 compliant cryptography that's resistant to quantum computing attacks.",
     icon: Shield,
   },
   {
-    name: "High-Performance Systems",
-    description: "Optimized for speed and efficiency, our solutions deliver unparalleled performance.",
+    name: "Decentralized Radio Communication",
+    description: "Leveraging open-source Meshtastic protocol for resilient, off-grid mesh networking with no central infrastructure.",
+    icon: Radio,
+  },
+  {
+    name: "Hardware TRNG Security",
+    description: "True Random Number Generation (TRNG) in hardware for cryptographic operations that can't be compromised.",
+    icon: Cpu,
+  },
+  {
+    name: "Low-Power Operation",
+    description: "Optimized for efficiency on embedded devices, enabling long-lasting battery life for field deployments.",
     icon: Zap,
   },
 ]
@@ -27,9 +27,9 @@ export default function Features() {
   return (
     <section className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Cutting-Edge Solutions</h2>
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Post-Quantum Mesh Network</h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          Discover how Amane Soft can transform your business with our innovative technologies.
+          KyMesh combines open-source radio communication with quantum-resistant encryption for secure, decentralized connectivity.
         </p>
       </div>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Github, Menu } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { Menu } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -39,17 +38,6 @@ export default function Navbar() {
         </Sheet>
         
         <div className="flex items-center space-x-4">
-          <ThemeToggle />
-          <Link
-            href="https://github.com/kymesh"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button variant="ghost" size="icon">
-              <Github className="h-4 w-4" />
-              <span className="sr-only">GitHub</span>
-            </Button>
-          </Link>
           <Button size="sm" asChild>
             <Link href="#contact">Get a Demo</Link>
           </Button>

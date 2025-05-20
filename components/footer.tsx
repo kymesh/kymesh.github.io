@@ -24,7 +24,7 @@ export default function Footer() {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="mailto:contact@kymesh.com"
+              href="mailto:contact@kymesh.net"
               className="text-muted-foreground transition-colors hover:text-primary"
             >
               <Mail className="h-5 w-5" />

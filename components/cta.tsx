@@ -16,7 +16,7 @@ export default function CTA() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-6">
           <Button size="lg" asChild>
-            <Link href="mailto:contact@kymesh.com">Contact Us</Link>
+            <Link href="mailto:contact@kymesh.net">Contact Us</Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
             <Link href="https://github.com/kymesh" target="_blank" rel="noreferrer">
